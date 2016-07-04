@@ -1,0 +1,22 @@
+<div id="map-canvas"></div>
+<header>
+  <div class='title'>
+    <a href='/'><h1>Fire Tracker</h1></a>
+    <h2>Stay up to date on the latest fire news</h2>
+  </div>
+  <div class="description" id='register-form'>
+    <div id="inner">
+      {{#if id}}
+        <p>Click on the icons above access each fire's current twitter feed and save a specific fire to your fire map<small><br>*data courtesy of <a href="http://inciweb.nwcg.gov/" target="_blank">inciweb</a></small></p>
+        <a class='button' href='/saved-fires'>My fire map</a><a href="/logout" class='login'>Logout</a>
+      {{else}}
+        <p>Click on the icons above access each fire's current twitter feed or register below and keep track of specific fires.<small><br>*data courtesy of <a href="http://inciweb.nwcg.gov/" target="_blank">inciweb</a></small></p>
+        <a id="register" class='button'>register</a><a id="login" class='login'>Login</a>
+      {{/if}}
+  </div>
+  <div id='form'></div>
+  <img id='minimize' src='/images/close-white.png'>
+
+</div>
+</header>
+<script src='/javascripts/map.js'></script>

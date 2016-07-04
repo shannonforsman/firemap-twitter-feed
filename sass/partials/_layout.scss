@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+
+ html, body, #map-canvas, #my-fire-map {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+body {
+  position: relative;
+}
+
+ .box {
+  overflow: auto;
+  height: 45%;
+  padding-right: 16px;
+  width: 100%;
+}
+
+ .arrow {
+   width: 0;
+   height: 0;
+   border-top: 15px solid transparent;
+   border-bottom: 15px solid transparent;
+   border-right: 15px solid $white;
+   opacity: .85;
+   position: absolute;
+   left: -15px;
+   bottom: 275px;
+}
+
+html {
+    overflow-y:scroll;
+}

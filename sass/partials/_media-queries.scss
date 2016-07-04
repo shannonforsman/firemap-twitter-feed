@@ -1,0 +1,84 @@
+@media (max-width: 1400px) {
+  header {
+    width: 700px;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    width: 100%;
+    top: 0;
+    bottom: auto;
+    .title {
+      background: none;
+      width: 70%;
+      min-height: 0;
+      padding: 16px 16px 0;
+      h1 { font-size: 30px; }
+      h2 { font-size: 16px ;
+           margin-bottom: 0;
+           font-weight: 500;}
+    }
+    .description {
+      width: 70%;
+      float: left;
+      padding: 8px 16px 16px;
+      p { font-size: 16px;
+          font-weight: 500;}
+      #register, .button {
+        position: absolute;
+        top: 48px;
+        right: 16px;
+      }
+      #login, .login {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      input {
+        margin: 0 0 16px;
+      }
+      form {
+        width: 256px;
+        input[type=submit], .button {
+          position: relative;
+          right: auto;
+          top: auto;
+        }
+      }
+      ul {
+        position: relative;
+        right: 0;
+        margin-bottom: 16px;
+        width: 224px;
+      }
+    }
+    #minimize {
+      display: block;
+      float: right;
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    .description {
+      width: 100%;
+      #register, #login, .button, .login {
+        position: relative;
+        top: auto;
+        right: auto;
+        float: left;
+      }
+    }
+    .title {
+      width: 100%;
+    }
+  }
+}
